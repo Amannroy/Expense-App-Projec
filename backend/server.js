@@ -19,7 +19,10 @@ connectDB();
 // Middlewares
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://expense-app-projec-nimg.vercel.app/', // Replace with your frontend URL
+  methods: ['GET', 'POST'], // Allow GET and POST methods
+}));
 
 // Routes
 // user routes
