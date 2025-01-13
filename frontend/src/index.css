@@ -1,0 +1,257 @@
+/* Global Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Common Content Styles */
+.content {
+  height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color:#563d7c !important; /* A modern purple shade */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #ffffff !important;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #d1d1d1 !important;
+}
+
+.navbar .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Logout Button Styling */
+.navbar .btn-primary {
+  display: inline-block;
+}
+
+/* User Name Styling */
+.navbar .nav-link {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .navbar .btn-primary {
+    font-size: 0.9rem;
+  }
+}
+
+/* Login & Register Page CSS (Retained) */
+.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgb(151, 63, 246) 0%, rgb(5, 22, 52) 100%);
+  padding: 20px;
+}
+
+.register-page form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-page h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-page .ant-form-item-label > label {
+  font-weight: 500;
+  color: #555555;
+}
+
+.register-page .ant-input {
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.register-page .btn-primary {
+  background-color: #2575fc;
+  border-color: #2575fc;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.register-page .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.register-page .d-flex {
+  margin-top: 15px;
+}
+
+.register-page a {
+  font-size: 14px;
+  color: #2575fc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register-page a:hover {
+  color: #0056b3;
+}
+
+/* Transaction Page */
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px gray;
+}
+
+/* Antd Icons */
+.switch-icons {
+  border: 1px solid rgba(0, 0, 0, 0.677);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.anticon svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-icon {
+  color: black;
+}
+
+.inactive-icon {
+  color: gray;
+}
+
+/* Analytics CSS */
+/* General Layout */
+.container-fluid {
+  padding: 20px;
+}
+
+/* Card Styles */
+.card {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.card-header {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-body h5 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Progress Circles */
+.ant-progress-circle {
+  margin: 10px;
+}
+
+/* Categorywise Income/Expense */
+h4 {
+  color: #343a40;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-body h5 {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.card-body .ant-progress {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .container-fluid {
+    padding: 10px;
+  }
+}
